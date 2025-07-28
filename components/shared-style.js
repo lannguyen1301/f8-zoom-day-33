@@ -22,9 +22,9 @@ export async function getSharedStyle() {
     if (cachedStyle) return cachedStyle.cloneNode(true);
 
     const urls = [
-        "/assets/css/variables.css",
-        "/assets/css/reset.css",
-        "/assets/css/shared.css",
+        "./assets/css/variables.css",
+        "./assets/css/reset.css",
+        "./assets/css/shared.css",
     ];
 
     const style = document.createElement("style");
