@@ -1,0 +1,49 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    scroll-behavior: smooth;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+input,
+button,
+select {
+    padding: 0;
+    border: none;
+    outline: none;
+
+    background: transparent;
+    cursor: pointer;
+}
+
+a,
+img,
+button,
+input,
+textarea,
+select {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    /** 
+        Thuộc tính -webkit-tap-highlight-color được sử dụng trong CSS 
+        để kiểm soát hiệu ứng highlight (màu nhấp nháy) khi người dùng chạm vào 
+        một phần tử trên các thiết bị di động sử dụng trình duyệt WebKit (Safari, Chrome trên iOS).
+    **/
+}

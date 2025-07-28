@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F8 ZOOM DAY 33</title>
+</head>
+
+<body>
+    <main>
+        <h1>F8 ZOOM DAY 33</h1>
+        <button id="open-modal-1" class="btn">Open Modal</button>
+        <button id="open-modal-2" class="btn">Open Modal 2</button>
+        <button id="open-modal-3" class="btn">Open Modal 3</button>
+
+    </main>
+
+    <!-- App Heading -->
+    <app-heading></app-heading>
+
+    <!-- App Heading Template -->
+    <template id="app-heading-tpl">
+        <style>
+            h2.title {
+                color: orange;
+                font-size: 3rem;
+                /* font-weight: 500; */
+            }
+        </style>
+        <h2 class="title">Heading Web Components</h2>
+    </template>
+
+    <!-- Button Call Modal -->
+    <button id="open-modal">Open Modal</button>
+
+    <!-- App Modal -->
+    <app-modal heading="Modal 1" hidden>
+        <p>Ghi chú: có thể CSS bên ngoài thẻ template thông qua biến CSS</p>
+        <p>Mặc định thẻ template chỉ viết được CSS bên trong nó, không thể can thiệp CSS từ bên ngoài thẻ. Chỉ can thiệp
+            được khi dùng biến TRONG CSS</p>
+        <p>Content Of Modal. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, odit!</p>
+        <div slot="footer">
+            <button id="close-btn">Cancel</button>
+            <button>Confirm</button>
+        </div>
+    </app-modal>
+
+    <!-- App Modal Template -->
+    <template id="app-modal-tpl">
+        <!-- thêm css Externals  -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- Thêm CSS Internals -->
+        <style>
+            .inner {
+                min-width: 350px;
+                padding: var(--app-modal-padding, 20px);
+                border-radius: 10px;
+                background: #fff;
+                /*  */
+
+            }
+
+            #heading {
+                color: var(--app-modal-heading-color, red);
+            }
+        </style>
+        <div class="modal">
+            <div class="inner">
+                <div class="header">
+                    <h1 id="heading"></h1>
+                </div>
+                <div class="content">
+                    <slot></slot>
+                </div>
+                <div class="footer">
+                    <slot name="footer"></slot>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- other-components template -->
+
+    <!-- hiển thị khi trình duyệt bị tắt tính năng hoặc hỗ trợ javascript -->
+    <noscript>
+        <div class="noscript-warning">
+            Trình duyệt của bạn không hỗ trợ JavaScript. Một số tính năng có thể không hoạt động.
+        </div>
+    </noscript>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

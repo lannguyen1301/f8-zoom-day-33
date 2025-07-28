@@ -1,0 +1,20 @@
+/* *,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:host {
+    --heading-font: "PT Sans", sans-serif;
+
+    --black: #000;
+    --white: #fff;
+    --text-color: #0009;
+
+    --primary: #b80257;
+    --secondary: #783df0;
+    --tertiary: #fff9;
+
+    --border-color: #0000000d;
+    --footer-bg: #151515;
+} */
