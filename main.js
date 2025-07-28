@@ -1,7 +1,7 @@
 import "./components/app-heading.js";
 import "./components/app-main.js";
 import "./components/app-footer.js";
-import "./Components/app-modal.js";
+import "./components/app-modal.js";
 
 // Open Modal
 const openModalBtn = document.querySelector("#open-modal");
