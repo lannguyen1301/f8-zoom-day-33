@@ -1,0 +1,6 @@
+button.btn {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 600;
+}

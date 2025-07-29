@@ -9,7 +9,6 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/modal.css">
 
     <!-- test opal modal library -->
     <!-- <link rel="stylesheet" href="https://lannguyen1301.github.io/openix/openix.min.css"> -->
@@ -862,10 +861,12 @@
     </div>
 
     <!-- Button Call Modal -->
-    <!-- <button id="open-modal">Open Modal</button> -->
+    <button id="open-modal-1" class="btn">Open Modal</button>
+    <button id="open-modal-2" class="btn">Open Modal 2</button>
+    <button id="open-modal-3" class="btn">Open Modal 3</button>
 
     <!-- App Modal -->
-    <!-- <app-modal heading="Modal 1" hidden>
+    <app-modal heading="Modal 1" hidden>
         <p>Ghi chú: có thể CSS bên ngoài thẻ template thông qua biến CSS</p>
         <p>Mặc định thẻ template chỉ viết được CSS bên trong nó, không thể can thiệp CSS từ bên ngoài thẻ. Chỉ can thiệp
             được khi dùng biến TRONG CSS</p>
@@ -874,7 +875,7 @@
             <button id="close-btn">Cancel</button>
             <button>Confirm</button>
         </div>
-    </app-modal> -->
+    </app-modal>
 
     <!-- App Modal Template -->
     <template id="app-modal-tpl">
@@ -882,7 +883,7 @@
         <!-- <link rel="stylesheet" href="./style.css"> -->
 
         <!-- Thêm CSS Internals -->
-        <!-- <style>
+        <style>
             * {
                 padding: 0;
                 margin: 0;
@@ -911,8 +912,8 @@
             #heading {
                 color: var(--app-modal-heading-color, red);
             }
-        </style> -->
-        <!-- <div class="modal">
+        </style>
+        <div class="modal">
             <div class="inner">
                 <div class="header">
                     <h1 id="heading"></h1>
@@ -924,86 +925,8 @@
                     <slot name="footer"></slot>
                 </div>
             </div>
-        </div> -->
+        </div>
     </template>
-
-
-    <!-- Modal button -->
-    <button id="open-modal-1" class="btn">Open Modal</button>
-    <button id="open-modal-2" class="btn">Open Modal 2</button>
-    <button id="open-modal-3" class="btn">Open Modal 3</button>
-
-    <template id="modal-1">
-        <h2>Modal 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse facilis quo! Eligendi, harum
-            porro totam modi quibusdam quas ducimus optio atque in neque excepturi accusamus! Natus, tempore amet
-            quis corrupti a ipsa totam aperiam labore alias quaerat nulla! Delectus ipsam consectetur provident
-            aliquid quam praesentium aliquam ipsum tempora magni!
-        </p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse facilis quo! Eligendi, harum
-            porro totam modi quibusdam quas ducimus optio atque in neque excepturi accusamus! Natus, tempore amet
-            quis corrupti a ipsa totam aperiam labore alias quaerat nulla! Delectus ipsam consectetur provident
-            aliquid quam praesentium aliquam ipsum tempora magni!
-        </p>
-
-        <p><img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="" width="100%" loading="lazy"></p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse facilis quo! Eligendi, harum
-            porro totam modi quibusdam quas ducimus optio atque in neque excepturi accusamus! Natus, tempore amet
-            quis corrupti a ipsa totam aperiam labore alias quaerat nulla! Delectus ipsam consectetur provident
-            aliquid quam praesentium aliquam ipsum tempora magni!
-        </p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse facilis quo! Eligendi, harum
-            porro totam modi quibusdam quas ducimus optio atque in neque excepturi accusamus! Natus, tempore amet
-            quis corrupti a ipsa totam aperiam labore alias quaerat nulla! Delectus ipsam consectetur provident
-            aliquid quam praesentium aliquam ipsum tempora magni!
-        </p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse facilis quo! Eligendi, harum
-            porro totam modi quibusdam quas ducimus optio atque in neque excepturi accusamus! Natus, tempore amet
-            quis corrupti a ipsa totam aperiam labore alias quaerat nulla! Delectus ipsam consectetur provident
-            aliquid quam praesentium aliquam ipsum tempora magni!
-        </p>
-    </template>
-
-    <template id="modal-2">
-        <h2>Login Lorem ipsum dolor sit amet consectetur.</h2>
-        <form action="" id="login-form">
-            <input type="text" name="" id="email" placeholder="Enter Your Email">
-            <br>
-            <input type="text" name="" id="password" placeholder="Enter Your Password">
-            <br>
-            <button type="submit">Login</button>
-        </form>
-    </template>
-
-    <template id="modal-3">
-        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum assumenda rem iusto asperiores vitae eaque
-            ducimus ea omnis nulla quis non voluptas, fugiat expedita perspiciatis voluptatum suscipit odit nobis,
-            labore corrupti. Soluta molestiae non dicta officia adipisci, earum repellendus rerum est ratione nihil
-            asperiores alias nulla voluptatem obcaecati debitis vero sunt veniam laudantium ullam ipsa, tempora laborum.
-            Quisquam perferendis nostrum provident iure est? At neque perferendis labore unde sed provident non,
-            pariatur officiis reiciendis expedita porro harum placeat atque. Minus distinctio beatae placeat quas eum
-            enim rem excepturi nisi obcaecati aliquam eaque tempora, culpa perspiciatis ab, consequuntur saepe,
-            explicabo optio.
-        </p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum assumenda rem iusto asperiores vitae eaque
-            ducimus ea omnis nulla quis non voluptas, fugiat expedita perspiciatis voluptatum suscipit odit nobis,
-            labore corrupti. Soluta molestiae non dicta officia adipisci, earum repellendus rerum est ratione nihil
-            asperiores alias nulla voluptatem obcaecati debitis vero sunt veniam laudantium ullam ipsa, tempora laborum.
-            Quisquam perferendis nostrum provident iure est? At neque perferendis labore unde sed provident non,
-            pariatur officiis reiciendis expedita porro harum placeat atque. Minus distinctio beatae placeat quas eum
-            enim rem excepturi nisi obcaecati aliquam eaque tempora, culpa perspiciatis ab, consequuntur saepe,
-            explicabo optio.
-        </p>
-    </template>
-
-
-    <!-- Modal button -->
     <!-- other-components template -->
 
     <!-- hiển thị khi trình duyệt bị tắt tính năng hoặc hỗ trợ javascript -->
